@@ -96,12 +96,17 @@ const Todo = ({
 	completed,
 	text
 }) => (
-	<li className='item'
-		onClick={onClick}
-		style={{textDecoration: completed ? 'line-through' : 'none'}}
-	>
-		{text}
-	</li>
+	<div className='item-button'>
+		<p className='item'
+			onClick={onClick}
+			style={{textDecoration: completed ? 'line-through' : 'none'}}
+		>
+			{text}
+		</p>
+		<button className='delete-todo'>
+			X
+		</button>
+	</div>
 );
 
 const TodoList = ({
