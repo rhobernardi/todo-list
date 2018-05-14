@@ -1,0 +1,29 @@
+.todolist-container {
+  margin: auto;
+}
+
+.todolist-container:hover {
+  cursor: context-menu;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.options-container .options {
+  margin-left: 5px;
+}
+
+.options-container .options:hover {
+  color: #3bc96a;
+  cursor: context-menu;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=TodoApp.css.map */

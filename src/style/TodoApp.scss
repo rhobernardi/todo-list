@@ -1,0 +1,44 @@
+$lagoon-blue: #62fdca;
+$selection-color: #3bc96a;
+$backgroud-color: rgb(240, 240, 240);
+
+@mixin border-test($color) {
+    border: 2px solid $color;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.todolist-container {
+    margin: auto;
+    &:hover {
+        cursor: context-menu;
+    }
+    // @include border-test($lagoon-blue);
+}
+
+.item-container {
+    @include flex-column;
+}
+
+ .options-container {
+    @include flex-row;
+    flex-wrap: wrap;
+    // @include border-test($lagoon-blue);
+    .options {
+        margin-left: 5px;
+        &:hover { 
+            color: $selection-color; 
+            cursor: context-menu;
+            text-decoration: underline; 
+        }
+        // @include border-test($lagoon-blue);
+    }
+}
